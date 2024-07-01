@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="Home.htm">Home</a>
+            <!--<a href="Packages.htm">Packages</a>-->
+            <a href="Services.htm">Services</a>
+            <a href="Gallery.htm">Gallery</a>
+            <a href="Review.htm">Review</a>
+            <a href="Book.htm">Book</a>
+            <a href="Contact.htm">Contact</a>
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>forget password? <a href="#">Click here</a></p>
+            <p>don't have and account? <a href="#">Register Now</a></p>
+        </form>
+
+    </div>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3 class="ss">Travel is Paradise</h3>
+            <p class="s"><b> <marquee behavior="label" direction="link">Everyone should have good trip and so that those people know good places</marquee></b></p>
+            <a href="#" class="btn">Discover More</a>
+        </div>
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <div class="formclass">
+        <form action="" onsubmit="return false" ;>
+            <div class="up">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UAE">UAE</option>
+            <option value="Australia">Australia</option>
+        </select>
+                <label for="city">City</label>
+                <select name="city" id="city">
+                <option value="goa">Goa</option>
+                <option value="pune">Pune</option>
+                <option value="banglore">Banglore</option>
+                <option value="mumbai">Mumbai</option>
+            </select>
+                <label for="check-in">Check-in</label>
+                <input type="date" id="check-in" name="check-in">
+
+                <label for="check-out">Check-out</label>
+                <input type="date" id="check-out" name="check-out">
+            </div>
+            <div class="next">
+                <div class="nextnext">
+                    <label class="nextlabel" for="room">Rooms</label>
+                    <select name="room" id="room">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+
+
+        <label class="nextlabel" for="guest">Guests</label>
+        <select onchange="validate_rANDg()" name="guest" id="guest">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+         
+        </select>
+
+                    <h2>*We allow 3 guests per room*</h4>
+                </div>
+
+                <div class="nextnext2">
+                    <label class="nextlabel" for="tot">Type of Trip</label>
+                    <select name="tot" id="tot">
+            <option value="business">Business</option>
+            <option value="fun">Leisure</option>
+            <option value="fun">Other</option>
+        </select>
+                </div>
+            </div>
+
+            <div class="search">
+                <button onclick="validate_city()">Search</button>
+                <!--change color on hovering-->
+            </div>
+        </form>
+    </div>
+
+
+    <section class="box-container">
+        <div class="container">
+            <div class="rows row1">
+                <div class="img-box"><img src="./images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg" alt="Error"></div>
+                <div class="text-box box-container">
+                    <h1 class="heading-1">Website-Box-1</h1><br><br>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate cumque at quos ratione distinctio eaque, amet facere, non obcaecati voluptates natus rem assumenda nulla repellat quas dignissimos repellendus molestias facilis.
+                        Lorem ipsum dolor sit amet..</p>
+                    <a href="#" class="btn btn-secondary">More</a>
+                </div>
+            </div>
+            <div class="rows row2">
+                <div class="img-box"><img src="./images/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Error"></div>
+                <div class="text-box">
+                    <h1 class="heading-1">Website-Box-2</h1><br><br>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate cumque at quos ratione distinctio eaque, amet facere, non obcaecati voluptates natus rem assumenda nulla repellat quas dignissimos repellendus molestias facilis.
+                        Lorem ipsum dolor sit amet..</p>
+                    <a href="#" class="btn btn-secondary">More</a>
+                </div>
+            </div>
+            <div class="rows row3">
+                <div class="img-box"><img src="./images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg" alt="Error"></div>
+                <div class="text-box">
+                    <h1 class="heading-1">Website-Box-3</h1><br><br>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate cumque at quos ratione distinctio eaque, amet facere, non obcaecati voluptates natus rem assumenda nulla repellat quas dignissimos repellendus molestias facilis.
+                        Lorem ipsum dolor sit amet..</p>
+                    <a href="#" class="btn btn-secondary">More</a>
+                </div>
+            </div>
+            <div class="rows row4">
+                <div class="img-box"><img src="./images/atlas-green-hRRjixxRgfQ-unsplash.jpg" alt="Error"></div>
+                <div class="text-box">
+                    <h1 class="heading-1">Website-Box-4</h1><br><br>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate cumque at quos ratione distinctio eaque, amet facere, non obcaecati voluptates natus rem assumenda nulla repellat quas dignissimos repellendus molestias facilis.
+                        Lorem ipsum dolor sit amet..
+                    </p>
+                    <a href="#" class="btn btn-secondary">More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+   
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="Home.htm">Home</a>
+                <a href="Packages.htm">Packages</a>
+                <a href="Services.htm">Services</a>
+                <a href="Gallery.htm">Gallery</a>
+                <a href="Review.htm">Review</a>
+                <a href="Book.htm">Book</a>
+                <a href="Contact.htm">Contact</a>
+
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> Mr. Hrishiraj </span> | all rights reserved! </h1>
+
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
